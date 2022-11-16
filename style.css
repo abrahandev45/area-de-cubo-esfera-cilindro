@@ -35,13 +35,17 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 10px;
+    
     background: rgba(49, 10, 10, 0.579);
     width: 400px;
     display: none;
 }
-.cilinmostrar,.esfermostrar,.cubomostrar{
+.cilinmostrar, .esfermostrar, .cubomostrar{
     display: block;
+    text-align: center;
+    
 }
 
 .cilindro{
@@ -52,6 +56,7 @@ form{
     color: white;
     cursor: pointer;
     transition: .6s;
+    
 }
 .cilindro:hover{
     background: rgb(91, 95, 91);
@@ -67,12 +72,14 @@ input{
     padding: 10px 15px;
 }
 label{
+    display: flex;
     position: relative;
     left: 30px;
-    align-self: flex-start;
+    /*align-self: flex-start;*/
 }
-.pi{
-    text-align: center;
+.column-50 .pi{
+    justify-content: center;
+    transform: translatex(-30px);
     margin-bottom: 20px;
 }
 .esfera{
@@ -86,4 +93,8 @@ label{
 .esfera:hover{
     background: white;
     color: rgb(15, 48, 142);
+}
+.cubox{
+    align-self: center;
+    width: 180px;
 }
