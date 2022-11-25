@@ -8,42 +8,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="link">
-        <strong id="btncilindro">cilindro</strong>
-        <strong id="btnesfera">esfera</strong>
-        <strong id="btncubo">cubo</strong>
-    </div>
-    <video src="./video/Corazón Serrano - Prometiste Volver (Que Seas Felíz) Video Oficial.mp4" controls ></video>
+    <div class="container">
+        <div class="link" id="link">
+            <strong class="item active">cilindro</strong>
+            <strong class="item">esfera</strong>
+            <strong class="item">cubo</strong>
+        </div>
+        <video src="./video/Corazón Serrano - Prometiste Volver (Que Seas Felíz) Video Oficial.mp4" controls ></video>
 
     
-    <form action="">
-        
-        <div class=" column-50 cilin" id="cilin">
-            <label for="" class="pi">valor del pi<strong id="pi"> (3.1416)</strong></label>
-            <label for="">altura</label>
-            <input type="text" placeholder="altura" id="altura">
-            <label for="">radio</label>
-            <input type="text" placeholder="radio" id="radio">
-            <input type="submit" value="cilindro" class="cilindro">
+        <form action="" class="panels">
             
-            <p>el volumen del cilindro es <strong id="resultado"></strong> cm³</p>
-        </div>
-        <div class="column-50 esfer" id="esfer">
-            <label for="" class="pi">valor del pi<strong id="pi"> 3.1416</strong></label>
-            <label for="">radio</label>
-            <input type="text" placeholder="radio" id="ciradio">
-            <input type="submit" value="esfera" class="esfera">
-            <p> el volumen de la esfera es <strong id="esferesultado"></strong> cm³</p>
-        </div>
-        <div class="column-50 cubo" id="cubo">
-            <label for="" class="pi">area del cubo<strong id="pi"></strong></label>
-            <label for="">lado</label>
-            <input type="text" placeholder="lado" id="cubolado">
-            <input type="submit" value="cubo" class="cubox">
-            <p> el volumen de la esfera es <strong id="cuboresultado"></strong> cm²</p>
-        </div>
-       
-    </form>
-    <script src="javascript.js"></script>
+            <div class=" column-50 panels_item active">
+                <label for="" class="pi">valor del pi<strong id="pi"> (3.1416)</strong></label>
+                <label for="">altura</label>
+                <input type="text" placeholder="altura" id="altura">
+                <label for="">radio</label>
+                <input type="text" placeholder="radio" id="radio">
+                <input type="submit" value="cilindro" class="cilindro">
+                <p>el volumen del cilindro es <strong id="cilinresultado"></strong> cm³</p>
+            </div>
+            <div class="column-50 panels_item ">
+                <label for="" class="pi">valor del pi<strong id="pi"> 3.1416</strong></label>
+                <label for="">radio</label>
+                <input type="text" placeholder="radio" id="ciradio">
+                <input type="submit" value="esfera" class="esfera">
+                <p> el volumen de la esfera es <strong id="esferesultado"></strong> cm³</p>
+            </div>
+            <div class="column-50 panels_item">
+                <label for="" class="pi">area del cubo<strong id="pi"></strong></label>
+                <label for="">lado</label>
+                <input type="text" placeholder="lado" id="cubolado">
+                <input type="submit" value="cubo" class="cubox">
+                <p> el volumen de la esfera es <strong id="cuboresultado"></strong> cm²</p>
+            </div>
+        
+        </form>    
+    </div>
+<script src="javascript.js"></script>
 </body>
 </html>
